@@ -11,7 +11,8 @@ if (config.util.getEnv('NODE_ENV') === 'test') {
   mongoose.connect('mongodb://localhost/test_db');
 } else {
   process.env.NODE_ENV = 'dev'
-  mongoose.connect('mongodb://localhost/bain_db');
+  // mongoose.connect('mongodb://localhost/bain_db');
+  mongoose.connect('mongodb://heroku_fg5kn0sf:s4u70qujl75kbjp40kjrdqa858@ds157475.mlab.com:57475/heroku_fg5kn0sf');
 }
 
 const db = mongoose.connection

@@ -1,4 +1,3 @@
-
 # Architecture
 
 ## Server & router: nodejs & express
@@ -41,12 +40,11 @@ mongod
 
 ## Import data and run nodejs
 ```sh
-$ cd bain-api
+$ cd nodejs-api
 $ ./importScript.sh
 $ npm install
 $ npm start
 ```
-
 Go to localhost://3000/api/providers to access api.
 
 ## to run automated tests
